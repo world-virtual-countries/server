@@ -1,2 +1,3 @@
-# server
-WVC data server.
+# WVC Server
+
+Data Server for WVC.

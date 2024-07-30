@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "wvc-server"
+version = "0.1.0"
+description = "WVC data server."
+authors = ["piwerm <m.buldakov10min@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+pendulum = "^3.0.0"
+fastapi = {extras = ["all"], version = "^0.111.1"}
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
