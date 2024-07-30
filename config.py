@@ -41,7 +41,6 @@ LOGGER_FILE_COMPRESSION = None
 
 LOGGER_FILE = f"./data/{LOGGER_FILE_FOLDER}/{LOGGER_DATE}.{LOGGER_FILE_TYPE}"
 LOGGER_CONSOLE = sys.stdout
-LOGGER_FASTAPI = ...
 
 LOGGER_LEVEL = "DEBUG"
 LOGGER_FORMAT = "<black>{time: HH:mm:ss!UTC} -</black> <level>{level}:</level> | <green>{name: <15} : {line: >4}</green> | <level>{message}</level>"
