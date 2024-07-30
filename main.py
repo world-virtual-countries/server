@@ -16,7 +16,7 @@ async def exception_handler(request: Request, exception: StarletteHTTPException)
         status_code=exception.status_code
     )
 
-if __name__ == "__main__":
-    uvicorn.run("main:app", reload=True)
+# if __name__ == "__main__":
+    # uvicorn.run("main:app", reload=True)
     # uvicorn.run(app)
     # uvicorn.run(app, host="0.0.0.0", port=8000)
