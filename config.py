@@ -26,8 +26,8 @@ OUC_TOKEN = os.environ.get("OUC_TOKEN")
 
 CALLBACK_URL = os.environ.get("CALLBACK_URL")
 CALLBACK_SERVER_NAME = os.environ.get("CALLBACK_SERVER_NAME")
-callback_confirmation = os.environ.get("CALLBACK_CONFIRMATION")
-callback_secret = os.environ.get("CALLBACK_SECRET")
+CALLBACK_CONFIRMATION = os.environ.get("CALLBACK_CONFIRMATION")
+CALLBACK_SECRET = os.environ.get("CALLBACK_SECRET")
 
 class OrderedJSONResponse(JSONResponse):
     media_type = "application/json"

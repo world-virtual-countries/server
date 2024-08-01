@@ -9,8 +9,7 @@ app.router.include_router(routers.callback.router)
 
 @app.on_event("startup")
 async def startup_event():
-    global callback_confirmation, callback_secret
-    callback_confirmation, callback_secret = await bot.setup_webhook()
+    await bot.setup_webhook()
 
 @app.exception_handler(StarletteHTTPException)
 async def exception_handler(request: Request, exception: StarletteHTTPException):
