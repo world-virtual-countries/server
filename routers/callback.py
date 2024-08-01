@@ -17,5 +17,5 @@ async def callback_handler(request: Request, background_task: BackgroundTasks):
             background_task.add_task(bot.process_event, data)
             
         return "ok"
-    except Exception:
-        raise HTTPException(status_code=403, detail="Forbidden")
+    except Exception as e:
+        raise HTTPException(status_code=403, detail="Forbidden: {}".format(repr(e)))
