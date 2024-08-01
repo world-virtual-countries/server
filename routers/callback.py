@@ -17,11 +17,11 @@ async def callback_handler(request: Request, background_task: BackgroundTasks):
             logger.critical("CONFIRMATION")
             return CALLBACK_CONFIRMATION
         if data["secret"] == CALLBACK_SECRET:
-            logger.critical("SECRET")
-            logger.critical(data["secret"])
-            logger.critical(bot.callback.get_secret_key())
-            logger.critical(CALLBACK_SECRET)
             background_task.add_task(bot.process_event, data)
+        logger.critical("SECRET")
+        logger.critical(data["secret"])
+        logger.critical(bot.callback.get_secret_key())
+        logger.critical(CALLBACK_SECRET)
             
         logger.critical("END")
             
