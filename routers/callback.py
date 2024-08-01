@@ -10,7 +10,7 @@ router = APIRouter(
 async def callback_handler(request: Request, background_task: BackgroundTasks):
     try:
         data = await request.json()
-
+        
         if data["type"] == "confirmation":
             return CALLBACK_CONFIRMATION
         if data["secret"] == CALLBACK_SECRET:
