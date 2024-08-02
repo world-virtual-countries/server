@@ -20,7 +20,6 @@ import typing
 import jinja2
 import loguru
 import pendulum
-import werkzeug
 import vkbottle
 
 dotenv.load_dotenv()
